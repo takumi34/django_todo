@@ -14,10 +14,41 @@ button {
 	color: white;
 	border-radius: .2em;
 	font-size: 125%;
+	position: relative;
 }
+
 
 form {
 	display: inline-block;
 
 }
 
+.todo_item {
+  display: block;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+  font-size: 100%;
+  color: #444;
+  text-decoration: none;
+}
+.text {
+	text-align: center;
+}
+.date {
+	float: right;
+}
+
+footer {
+	padding: 0.5em 0;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	width: 100%;
+}
+
+.container {
+	width: 75%;
+	margin: auto;
+}
