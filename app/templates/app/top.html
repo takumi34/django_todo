@@ -8,10 +8,13 @@
 </form>
 
 {% for item in items %}
-<div>
-  {{ item  }}
-  {{ item.id}}
+<div class="todo_item">
+  <span class="text">
+  {{ item.text}}
+  </span>
+  <span class="date">
   {{item.updated_datetime}}
+  </span>
 </div>
 
 {% endfor %}
