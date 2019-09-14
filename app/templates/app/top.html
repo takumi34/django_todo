@@ -4,7 +4,13 @@
 
 <form action="{% url 'app:top' %}" method="POST">{% csrf_token %}
   {{ form.as_p }}
-  <button type="submit" class="btn">create a new todo</button>
+  <button type="submit" class="btn">create</button>
 </form>
 
+{% for item in items %}
+<div>
+  {{ item  }}
+</div>
+
+{% endfor %}
 {% endblock %}
