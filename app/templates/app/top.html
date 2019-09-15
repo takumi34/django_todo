@@ -4,7 +4,7 @@
 
 <div class="form">
   <form action="{% url 'app:top' %}" method="POST">{% csrf_token %}
-    {{ form.as_p }}
+    {{ form.text }}
     <button type="submit" class="btn">create</button>
   </form>
 </div>
