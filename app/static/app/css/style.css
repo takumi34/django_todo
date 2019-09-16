@@ -42,9 +42,14 @@ form {
   text-decoration: none;
 }
 .text {
+  font-size: 1.5em;
   text-align: center;
 }
 .date {
+  font-size: 1em;
+}
+
+.delete {
   float: right;
 }
 
@@ -63,4 +68,13 @@ footer {
   width: 75%;
   margin: auto;
   overflow: auto;
+}
+
+.btn_delete {
+  padding: 0.2em 0.5em;
+  background: #87befd;
+  color: white;
+  border-radius: 50%;
+  font-size: 125%;
+  position: relative;
 }

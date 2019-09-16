@@ -14,9 +14,14 @@
   <span class="text">
     {{ item.text}}
   </span>
-  <span class="date">
-    {{item.updated_datetime}}
+
+  <span class="delete">
+    <form action="{% url 'app:top'  %}" method="post">{% csrf_token %}
+      <button class="btn_delete" type="submit" onclick='return confirm("Will you delete this?");'>delete</button>
+    </form>
   </span>
 </div>
 
 {% endfor %}
+
+{% endblock %}
